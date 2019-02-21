@@ -1,0 +1,25 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+	var A = 13;
+	var B = -40;
+	var C = 13;
+	
+	X = Formulageneralmas(A,B,C);
+	
+	X2 = Formulageneralmenos(A,B,C);
+	
+	console.log(X);
+}
+function Formulageneralmas(A,B,C){
+	var X = -B+ (sqrt(pow(B,2)-(4*A*C) )) / (2*A);
+	return X;
+}
+function Formulageneralmenos(A,B,C){
+	var X2 = -B-(sqrt(pow(B,2)-(4*A*C) )) / (2*A);
+	
+	return X2;
+}
