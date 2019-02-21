@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+	var A = 5;
+	var B = 5;
+	hipotenusa = sqrt(pow(A,2)+pow(B,2));
+	console.log(hipotenusa);
+}
+function hipotenusa(A,B){
+	var hipotenusa;
+	hipotenusa = sqrt(pow(A,2)+pow(B,2));
+	return hipotenusa;
+}
